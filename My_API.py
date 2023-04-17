@@ -5,14 +5,14 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    return jsonify({'message': 'Mulham API'})
+    return jsonify({'message': 'API'})
 
 @app.route('/users')
 def get_users():
     users = [
-        {'id': 1, 'name': 'Mulham'},
-        {'id': 2, 'name': 'Wassem'},
-        {'id': 3, 'name': 'Subhi'}
+        {'id': 1, 'name': 'test'},
+        {'id': 2, 'name': 'test 1'},
+        {'id': 3, 'name': 'test 2'}
     ]
     return jsonify({'users': users})
 
